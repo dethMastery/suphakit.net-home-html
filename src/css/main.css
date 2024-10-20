@@ -1,0 +1,129 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Flex:100,200,300,regular,500,600,700,800,900);
+
+* {
+  font-family: "Roboto Flex", sans-serif;
+  transition: all 0.3s;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+
+  background: #2e2f2f;
+  color: whitesmoke;
+
+  overflow-x: hidden;
+}
+
+.heading-container {
+  width: 100%;
+  height: 100dvh;
+
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
+
+.heading-container .overlay {
+  width: 100%;
+  height: 100dvh;
+
+  backdrop-filter: blur(0.2rem);
+
+  background: rgba(46, 47, 47, 0.6);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
+
+.heading-container .overlay.title {
+  width: 100%;
+  height: 100dvh;
+
+  backdrop-filter: blur(0) !important;
+  /* background: #2e2f2f; */
+  background: url("/src/img/title.webp");
+
+  background-clip: text;
+  color: transparent;
+
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+
+  flex-direction: row !important;
+  gap: 1rem;
+}
+
+.heading-container .overlay.title .text-container {
+  width: 100%;
+  height: 100dvh;
+
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+
+.heading-container .overlay.title .text-container h1 {
+  width: 100%;
+  height: 100vh;
+
+  padding: 0 !important;
+  margin: 0 !important;
+
+  /* font-size: calc(10vw + 10vh + 2vmin); */
+  font-weight: bold;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.heading-container .overlay.title .text-container h1 span {
+  font-size: 500px;
+}
+
+.heading-container .overlay.title .text-container h1:first-child {
+  justify-content: start;
+  text-align: right;
+}
+
+.heading-container .overlay.title .text-container h1:nth-child(2) {
+  justify-content: center;
+  text-align: left;
+}
+
+.heading-container .overlay.title .text-container h1:last-child {
+  justify-content: end;
+  text-align: left;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+  padding: 1rem 0;
+
+  text-align: center;
+
+  background: rgba(245, 245, 245, 0.6);
+  color: #2e2f2f;
+}
+
+.footer a {
+  color: #2e2f2f;
+}
+
+.footer a:hover {
+  opacity: 0.4;
+  text-decoration: none;
+}
