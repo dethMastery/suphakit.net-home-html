@@ -60,7 +60,7 @@ body {
   background-size: cover !important;
 
   flex-direction: row !important;
-  gap: 1rem;
+  gap: 15rem;
 }
 
 .heading-container .overlay.title .text-container {
@@ -69,40 +69,43 @@ body {
 
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
   text-align: center;
+  gap: 1rem;
 }
 
-.heading-container .overlay.title .text-container h1 {
-  width: 100%;
+.heading-container .overlay.title .text-container .cover {
   height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading-container .overlay.title .text-container .cover div.block {
+  height: 10vh;
+  width: 10vh;
+}
+
+.heading-container .overlay.title .text-container .cover div.pic {
+  width: 10vw;
+  height: 50vh;
 
   padding: 0 !important;
   margin: 0 !important;
 
   /* font-size: calc(10vw + 10vh + 2vmin); */
-  font-weight: bold;
+  /* font-weight: bold; */
 
-  display: flex;
-  flex-direction: column;
-}
+  background: url("/src/img/title.webp");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 
-.heading-container .overlay.title .text-container h1 span {
-  font-size: 500px;
-}
-
-.heading-container .overlay.title .text-container h1:first-child {
-  justify-content: start;
-  text-align: right;
-}
-
-.heading-container .overlay.title .text-container h1:nth-child(2) {
-  justify-content: center;
-  text-align: left;
-}
-
-.heading-container .overlay.title .text-container h1:last-child {
-  justify-content: end;
-  text-align: left;
+  border-radius: .5rem;
+  border: 2px solid whitesmoke;
 }
 
 .footer {
@@ -126,4 +129,15 @@ body {
 .footer a:hover {
   opacity: 0.4;
   text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .heading-container .overlay.title .text-container .cover {
+    flex-direction: row;
+  }
+
+  .heading-container .overlay.title .text-container .cover div.pic {
+    width: 50vw;
+    height: 10vh;
+  }
 }
