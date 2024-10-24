@@ -2,6 +2,10 @@
   transition-delay: 0s !important;
 }
 
+.hide {
+  opacity: 0 !important;
+}
+
 .heading-container .overlay .overlay.title .text-container .cover.start .pic {
   height: 0 !important;
 
@@ -10,6 +14,10 @@
 
 .heading-container .overlay .overlay.title .text-container .cover.start .block {
   height: 0 !important;
+}
+
+.heading-container .overlay .overlay.title .text-container .info-box * {
+  transition-delay: 1.3s;
 }
 
 .heading-container .overlay .overlay.title .text-container .cover:nth-child(0n+1) .pic {
