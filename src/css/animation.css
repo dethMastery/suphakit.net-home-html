@@ -1,3 +1,7 @@
+.no-delay {
+  transition-delay: 0s !important;
+}
+
 .heading-container .overlay .overlay.title .text-container .cover.start .pic {
   height: 0 !important;
 

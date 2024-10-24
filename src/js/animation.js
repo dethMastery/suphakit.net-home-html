@@ -1,8 +1,3 @@
-function homeCallback(elm, className) {
-  console.log(elm);
-  elm.classList.toggle(className);
-}
-
 window.addEventListener("load", (event) => {
   console.log("page is fully loaded");
 
@@ -15,6 +10,12 @@ window.addEventListener("load", (event) => {
       cover[i].classList.toggle("start");
     }, 500);
   }
+
+  setTimeout(() => {
+    for (let i = 0; i < cover.length; i++) {
+      cover[i].classList.toggle("no-delay");
+    }
+  }, 5000);
 
   //  for (let i = 0; i < cover.length; i++) {
   //    setTimeout(homeCallback(cover[i], 'start'), 3000);
