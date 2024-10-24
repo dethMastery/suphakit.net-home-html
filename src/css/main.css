@@ -23,6 +23,7 @@ body {
   background-position: center !important;
   background-repeat: no-repeat !important;
   background-size: cover !important;
+  background-attachment: fixed !important;
 }
 
 .heading-container .overlay {
@@ -42,6 +43,7 @@ body {
   background-position: center !important;
   background-repeat: no-repeat !important;
   background-size: cover !important;
+  background-attachment: fixed !important;
 }
 
 .heading-container .overlay.title {
@@ -58,6 +60,7 @@ body {
   background-position: center !important;
   background-repeat: no-repeat !important;
   background-size: cover !important;
+  background-attachment: fixed !important;
 
   flex-direction: row !important;
   gap: 15rem;
@@ -104,15 +107,13 @@ body {
   background-size: cover;
   background-attachment: fixed;
 
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   border: 2px solid whitesmoke;
+
+  transition: all 0.5s;
 }
 
 .footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-
   width: 100%;
   padding: 1rem 0;
 
@@ -132,12 +133,19 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
+  .heading-container .overlay.title .text-container {
+    flex-direction: column;
+  }
+
   .heading-container .overlay.title .text-container .cover {
     flex-direction: row;
+
+    width: 100%;
+    height: 10vh;
   }
 
   .heading-container .overlay.title .text-container .cover div.pic {
-    width: 50vw;
-    height: 10vh;
+    width: 50vw !important;
+    height: 10vh !important;
   }
 }

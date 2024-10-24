@@ -1,0 +1,48 @@
+.heading-container .overlay .overlay.title .text-container .cover.start .pic {
+  height: 0 !important;
+
+  border: 0;
+}
+
+.heading-container .overlay .overlay.title .text-container .cover.start .block {
+  height: 0 !important;
+}
+
+.heading-container .overlay .overlay.title .text-container .cover:nth-child(0n+1) .pic {
+  transition-delay: .2s;
+}
+
+.heading-container .overlay .overlay.title .text-container .cover:nth-child(even) .pic {
+  transition-delay: .15s;
+}
+
+.heading-container .overlay .overlay.title .text-container .cover:nth-child(0n+3) .pic {
+  transition-delay: .25s;
+}
+
+
+.heading-container .overlay .overlay.title .text-container .cover:nth-child(0n+1) .block {
+  transition-delay: 1s;
+}
+
+.heading-container .overlay .overlay.title .text-container .cover:nth-child(even) .block {
+  transition-delay: 0;
+}
+
+.heading-container .overlay .overlay.title .text-container .cover:nth-child(0n+3) .block {
+  transition-delay: 1s;
+}
+
+@media only screen and (max-width: 600px) {
+  .heading-container .overlay .overlay.title .text-container .cover.start .pic {
+    width: 0 !important;
+    height: 10vh;
+  
+    border: 0;
+  }
+  
+  .heading-container .overlay .overlay.title .text-container .cover.start .block {
+    width: 0 !important;
+    height: 10vh;
+  }
+}
