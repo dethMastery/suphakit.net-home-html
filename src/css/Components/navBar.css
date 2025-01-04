@@ -1,0 +1,40 @@
+.navBar {
+  width: 100%;
+
+  position: sticky;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  flex-direction: row;
+  z-index: 20;
+}
+
+.navBar div {
+  width: 100%;
+}
+
+.navBar div:nth-child(1) {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.navBar div:nth-child(2) {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 4;
+}
+
+.navBar div:nth-child(1) a.favicon {
+  width: 50px;
+}
+
+.navBar div:nth-child(1) a.favicon:hover {
+  opacity: 0.4;
+}
+
+.navBar div:nth-child(1) a.favicon img {
+  width: 50px;
+}
