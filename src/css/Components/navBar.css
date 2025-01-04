@@ -1,5 +1,7 @@
 .navBar {
   width: 100%;
+  background: #2e2f2f;
+  color: whitesmoke;
 
   position: sticky;
   top: 0;
@@ -14,17 +16,27 @@
   width: 100%;
 }
 
+.navBar div a {
+  background: #2e2f2f;
+  color: whitesmoke;
+  text-decoration: none;
+
+  padding: .5rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navBar div a:hover {
+  opacity: .4;
+  background: rgba(245, 245, 245, .4);
+}
+
 .navBar div:nth-child(1) {
   display: flex;
   justify-content: start;
   align-items: center;
-}
-
-.navBar div:nth-child(2) {
-  display: flex;
-  justify-content: end;
-  align-items: center;
-  gap: 4;
 }
 
 .navBar div:nth-child(1) a.favicon {
@@ -37,4 +49,16 @@
 
 .navBar div:nth-child(1) a.favicon img {
   width: 50px;
+}
+
+.navBar div:nth-child(2) {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.navBar div:nth-child(2) a {
+  padding: 0;
+  height: 100%;
+  padding: 0 1rem;
 }

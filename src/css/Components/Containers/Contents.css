@@ -3,9 +3,16 @@
   height: 100dvh;
   overflow-y: auto;
 
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(1rem);
+
   position: fixed;
   top: 0;
   left: 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 
   z-index: 10;
 }
@@ -17,8 +24,56 @@
 
 .content-container .content-box {
   width: 100%;
-  min-height: 100dvh;
+}
 
-  background: rgba(0, 0, 0, 0.6);
-  backdrop-filter: blur(1rem);
+.content-container .content-box .content-inner-box {
+  width: 80%;
+  background: whitesmoke;
+  color: #2e2f2f;
+
+  margin: 0 auto;
+  padding: 1rem;
+
+  border-radius: 1rem;
+}
+
+.content-container .content-box .content-inner-box * {
+  margin: 0;
+  padding: 0;
+}
+
+.content-container .content-box .content-inner-box h1 {
+  text-align: center;
+  text-decoration: underline;
+}
+
+.content-container .content-box#stats .content-inner-box {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.content-container .content-box#stats .content-inner-box #tech-stats-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1rem;
+  gap: .5rem;
+}
+
+.content-container .content-box#stats .content-inner-box a {
+  width: 70px;
+  height: 70px;
+  text-decoration: none;
+  border-radius: 100%;
+  border: 2px solid #2e2f2f;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
+
+.content-container .content-box#stats .content-inner-box a:hover {
+  opacity: .4;
+  transform: scale(.95);
 }
