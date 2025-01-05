@@ -43,20 +43,6 @@ const userData = {
       value: "true",
     },
   ],
-  contacts: [
-    {
-      floor: "Github",
-      value: "https://github.com/dethMastery|dethMastery",
-    },
-    {
-      floor: "X (Formerly Twitter)",
-      value: "https://x.com/georgeKdeterk|@georgeKdeterk",
-    },
-    {
-      floor: "E-Mail",
-      value: "mailto:pinyoworapot@suphakit.net|pinyoworapot@suphakit.net",
-    },
-  ],
 };
 
 const userImageElement = document.querySelector("#user-data > .user-image");
