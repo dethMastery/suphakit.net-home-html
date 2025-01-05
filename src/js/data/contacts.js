@@ -18,7 +18,7 @@ const contactElement = document.querySelector("#user-contacts");
 for (let i = 0; i < contacts.length; i++) {
   const template = `<a class="contacts-container" href="${
     contacts[i].value.split("|")[0]
-  }">
+  }" target="_blank">
   <p class="contact-link">
     ${contacts[i].value.split("|")[1]}
   </p>

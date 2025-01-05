@@ -39,7 +39,9 @@ for (let i = 0; i < works.length; i++) {
     }
   }
 
-  const Template = `<a class="work-container" href="${works[i].link}">
+  const Template = `<a target="_blank" class="work-container" href="${
+    works[i].link
+  }">
   <h2 class="work-name">
     ${works[i].name}
   </h2>
