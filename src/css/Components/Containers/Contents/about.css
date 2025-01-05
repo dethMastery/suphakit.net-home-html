@@ -1,0 +1,60 @@
+.content-container .content-box#about .content-inner-box #user-data {
+  width: 100%;
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.content-container
+  .content-box#about
+  .content-inner-box
+  #user-data
+  div.user-image,
+.content-container
+  .content-box#about
+  .content-inner-box
+  #user-data
+  div.data-user {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-container .content-box#about .content-inner-box #user-data .user-image {
+  width: 50% !important;
+}
+
+.content-container .content-box#about .content-inner-box #user-data .user-image .img {
+  width: 50%;
+  aspect-ratio: 1/1;
+
+  border: 5px solid #fe6e6f;
+  border-radius: 100%;
+
+  background-position: center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+}
+
+.content-container .content-box#about .content-inner-box #user-data .data-user {
+  width: 100%;
+  height: 100%;
+
+  flex-grow: 1;
+
+  flex-direction: column;
+  justify-content: start !important;
+  align-items: start !important;
+}
+
+.content-container .content-box#about .content-inner-box #user-data .data-user * {
+  text-align: left !important;
+}
+
+.content-container .content-box#about .content-inner-box #user-data .data-user p.subText {
+  opacity: .6;
+  font-size: 15px;
+}
