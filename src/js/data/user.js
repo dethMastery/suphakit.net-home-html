@@ -70,9 +70,11 @@ for (let i = 0; i < userData.details.length; i++) {
 
   if (userData.details[i].floor == "Birth Date") {
     const date = new Date(Number(userData.details[i].value));
+    const BD = new Date().getFullYear() - date.getFullYear();
+
     dateSlug = `${date.getDate()} ${
       mS[date.getMonth()]
-    }. ${date.getFullYear()}`;
+    }. ${date.getFullYear()} (${BD} years old now)`;
   }
 
   let template = `<div class="floor-container">

@@ -1,25 +1,24 @@
 @import url(/src/css/Components/Containers/Contents/about.css);
+@import url(/src/css/Components/Containers/Contents/edu.css);
 @import url(/src/css/Components/Containers/Contents/stats.css);
 @import url(/src/css/Components/Containers/Contents/works.css);
+@import url(/src/css/Components/Containers/Contents/contact.css);
 
 .content-container {
   width: 100%;
   height: 100dvh;
   overflow-y: auto;  
 
-
   position: fixed;
   top: 0;
   left: 0;
-
-  
 
   z-index: 10;
 }
 
 .content-container .content-hover {
   width: 100%;
-  height: 100dvh;
+  min-height: 100dvh;
 
   background: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(1rem);

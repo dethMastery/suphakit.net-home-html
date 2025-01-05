@@ -1,8 +1,10 @@
 .content-container .content-box#about .content-inner-box #user-data {
   width: 100%;
   padding: 1rem 0;
+  padding-top: 2rem;
   display: flex;
   flex-direction: row;
+  align-items: stretch;
 }
 
 .content-container
@@ -25,6 +27,9 @@
 
 .content-container .content-box#about .content-inner-box #user-data .user-image {
   width: 50% !important;
+  /* height: 100% !important; */
+  display: flex;
+  justify-content: center;
 }
 
 .content-container .content-box#about .content-inner-box #user-data .user-image .img {
@@ -67,10 +72,17 @@
   margin-top: 1rem;
   display: flex;
   flex-wrap: wrap;
+  gap: 1rem;
 }
 
 .content-container .content-box#about .content-inner-box #user-data .data-user .detailing .floor-container {
-  width: 30%;
+  width: 25%;
+  background: rgba(0, 0, 0, 0.6);
+  color: whitesmoke;
+
+  padding: .5rem;
+  border: 2px solid #2e2f2f;
+  border-radius: 1rem;
 }
 
 .content-container .content-box#about .content-inner-box #user-data .data-user .detailing .floor-container .floor {
