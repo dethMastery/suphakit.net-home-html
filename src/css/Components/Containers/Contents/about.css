@@ -58,3 +58,26 @@
   opacity: .6;
   font-size: 15px;
 }
+
+.content-container .content-box#about .content-inner-box #user-data .data-user p.desp {
+  margin-top: .5rem;
+}
+
+.content-container .content-box#about .content-inner-box #user-data .data-user .detailing {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.content-container .content-box#about .content-inner-box #user-data .data-user .detailing .floor-container {
+  width: 30%;
+}
+
+.content-container .content-box#about .content-inner-box #user-data .data-user .detailing .floor-container .floor {
+  opacity: .6;
+}
+
+.content-container .content-box#about .content-inner-box #user-data .data-user .detailing .floor-container .value {
+  font-size: 18px;
+  font-weight: bold;
+}
