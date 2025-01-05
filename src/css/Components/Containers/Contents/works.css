@@ -1,0 +1,56 @@
+.content-container .content-box#works .content-inner-box #user-works {
+  width: 100%;
+  margin-top: 2rem;
+  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 1rem;
+}
+
+.content-container .content-box#works .content-inner-box #user-works .work-container {
+  width: 22rem;
+
+  background: #2e2f2f;
+  color: whitesmoke;
+  border-radius: 1rem;
+  text-align: left !important;
+  padding: 1rem;
+  text-decoration: none;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content-container .content-box#works .content-inner-box #user-works .work-container:hover {
+  opacity: .4;
+}
+
+.content-container .content-box#works .content-inner-box #user-works .work-container * {
+  width: 100%;
+  text-align: left !important;
+}
+
+.content-container .content-box#works .content-inner-box #user-works .work-container .work-desp {
+  opacity: .6;
+  margin: .5rem 0;
+  flex-grow: 1;
+}
+
+.content-container .content-box#works .content-inner-box #user-works .work-container .work-lang-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: start !important;
+  gap: 10px;
+  margin-top: .5rem;
+}
+
+.content-container .content-box#works .content-inner-box #user-works .work-container .work-lang-container span.works-lang-badge {
+  width: fit-content !important;
+  background: rgb(66, 66, 241);
+  color: whitesmoke;
+  border-radius: 10px;
+  padding: 5px;
+}
