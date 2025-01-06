@@ -20,6 +20,13 @@ const works = [
     lang: "React.js, Vite.js, Typescript",
     desp: "The easier way for anyone who too lazy to pick what to eat.",
   },
+  {
+    id: 3,
+    name: "poke-tcg-tools",
+    link: "https://github.com/dethMastery/poke-tcg-tools",
+    lang: "React.js, Vite.js, Typescript",
+    desp: "Just a tools that help me play Pokémon TCG without torture (with Damage token).",
+  },
 ];
 
 const workElement = document.querySelector("#user-works");
