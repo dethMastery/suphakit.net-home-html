@@ -62,3 +62,58 @@
   height: 100%;
   padding: 0 1rem;
 }
+
+.navBar div:nth-child(3) {
+  display: none;
+  justify-content: end;
+  align-items: center;
+}
+
+.navBar div:nth-child(3) .menu {
+  width: fit-content;
+  padding: 0;
+  height: 100%;
+  padding: 0 1rem;
+}
+
+.navBar div:nth-child(3) .menu:hover {
+  opacity: .4;
+  cursor: pointer;
+  background: rgba(245, 245, 245, .4);
+}
+
+.navBar div.drop {
+  background: #2e2f2f;
+  display: none;
+  opacity: 0;
+  position: absolute;
+  top: 65px;
+  left: 0;
+}
+
+.navBar div.drop a {
+  padding: 1rem 0;
+}
+
+.navBar div.drop a:hover {
+  opacity: 1 !important;
+  background: rgba(245, 245, 245, .4) !important;
+}
+
+.navBar div.drop.show.show-opa {
+  opacity: 1;
+}
+
+@media only screen and (max-width: 600px) {
+  .navBar div:nth-child(2) {
+    display: none;
+  }
+
+  .navBar div:nth-child(3) {
+    display: flex;
+  }
+
+  .navBar div.drop.show {
+    display: block;
+  }
+}
