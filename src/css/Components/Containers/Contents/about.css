@@ -69,6 +69,7 @@
 }
 
 .content-container .content-box#about .content-inner-box #user-data .data-user .detailing {
+  width: 100%;
   margin-top: 1rem;
   display: flex;
   flex-wrap: wrap;
@@ -76,7 +77,7 @@
 }
 
 .content-container .content-box#about .content-inner-box #user-data .data-user .detailing .floor-container {
-  width: 25%;
+  width: 15rem;
   background: rgba(0, 0, 0, 0.6);
   color: whitesmoke;
 
@@ -92,4 +93,20 @@
 .content-container .content-box#about .content-inner-box #user-data .data-user .detailing .floor-container .value {
   font-size: 18px;
   font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+  .content-container .content-box#about .content-inner-box #user-data {
+    flex-direction: column !important;
+
+    gap: 1rem;
+  }
+
+  .content-container .content-box#about .content-inner-box #user-data .user-image {
+    width: 100% !important;
+  }
+
+  .content-container .content-box#about .content-inner-box #user-data .data-user .detailing {
+    justify-content: center;
+  }
 }
