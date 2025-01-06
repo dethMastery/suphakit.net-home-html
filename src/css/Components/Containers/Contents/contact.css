@@ -4,11 +4,12 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  flex-wrap: wrap;
   margin-top: 2rem;
 }
 
 .content-container .content-box#contacts .content-inner-box #user-contacts .contacts-container {
-  width: 20%;
+  width: 22rem;
   background: rgba(0, 0, 0, 0.6);
   color: whitesmoke;
   text-decoration: none;
