@@ -27,6 +27,13 @@ const works = [
     lang: "React.js, Vite.js, Typescript",
     desp: "Just a tools that help me play Pokémon TCG without torture (with Damage token).",
   },
+  {
+    id: 4,
+    name: "vg-tool",
+    link: "https://github.com/dethMastery/vg-tool",
+    lang: "Vue.js, Vite.js, Typescript",
+    desp: "CardFight Vanguard Tool that help you calculate Power",
+  },
 ];
 
 const workElement = document.querySelector("#user-works");
