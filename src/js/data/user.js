@@ -20,7 +20,7 @@ const userData = {
     "Junior Front-End Developer",
     "with kind of Full-Stack Web Developer Skills",
   ],
-  desp: "Hi, I'm Joji, a 1st year IT student. I’m a kind of a guy who tried to do “everything” that I have some passion with it like “coding” and “music composing” and I would like a job that allows for personal and professional growth.",
+  desp: "Hi, I'm Joji, a 2nd year IT student. I’m a kind of a guy who tried to do “everything” that I have some passion with it like “coding” and “music composing” and I would like a job that allows for personal and professional growth.",
   details: [
     {
       floor: "Nickname",
