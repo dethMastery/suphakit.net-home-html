@@ -2,14 +2,22 @@
   width: 100%;
   margin-top: 2rem;
 
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  gap: 1rem;
+  display: grid;
+
+  justify-content: center;
+
+  grid-template-columns: repeat(3, 18rem);
+  grid-template-rows: repeat(3, auto);
+  grid-auto-flow: dense;
+
+  justify-items: stretch;
+  align-items: stretch;
+
+  grid-gap: 1rem;
 }
 
 .content-container .content-box#edu .content-inner-box #user-edu .edu-container {
-  width: 22rem;
+  width: 100%;
 
   background: #2e2f2f;
   color: whitesmoke;
@@ -50,5 +58,5 @@
   flex-grow: 1;
   text-decoration: none;
   font-size: 22px;
-  padding: 1rem 0;
+  padding: 1rem 0.5rem;
 }
