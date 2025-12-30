@@ -16,13 +16,20 @@
   grid-gap: 1rem;
 }
 
-.content-container .content-box#edu .content-inner-box #user-edu .edu-container {
+.content-container
+  .content-box#edu
+  .content-inner-box
+  #user-edu
+  .edu-container {
   width: 100%;
 
-  background: #2e2f2f;
+  background: linear-gradient(45deg, transparent, rgba(0, 0, 0, 0.2));
   color: whitesmoke;
-  border-radius: 1rem;
-  /* padding: 1rem; */
+  border-radius: 8px;
+  border: 1px solid rgba(245, 245, 245, 0.4);
+  border-left: 0 !important;
+  border-bottom: 0 !important;
+
   text-align: center;
 
   display: flex;
@@ -30,31 +37,51 @@
   align-items: center;
 }
 
-.content-container .content-box#edu .content-inner-box #user-edu .edu-container p.grade {
+.content-container
+  .content-box#edu
+  .content-inner-box
+  #user-edu
+  .edu-container
+  p.grade {
   background: rgba(0, 0, 0, 0.4);
   width: 100%;
   /* height: 100%; */
-  padding: .5rem 0;
-  border-top-left-radius: 1rem;
-  border-top-right-radius: 1rem;
+  padding: 0.5rem 0;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 }
 
-.content-container .content-box#edu .content-inner-box #user-edu .edu-container p.year {
+.content-container
+  .content-box#edu
+  .content-inner-box
+  #user-edu
+  .edu-container
+  p.year {
   background: rgba(0, 0, 0, 0.4);
   width: 100%;
   /* height: 100%; */
-  padding: .5rem 0;
-  border-bottom-left-radius: 1rem;
-  border-bottom-right-radius: 1rem;
+  padding: 0.5rem 0;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
 
-.content-container .content-box#edu .content-inner-box #user-edu .edu-container p.school-class {
+.content-container
+  .content-box#edu
+  .content-inner-box
+  #user-edu
+  .edu-container
+  p.school-class {
   width: 100%;
   /* height: 100%; */
-  padding: .5rem 0;
+  padding: 0.5rem 0;
 }
 
-.content-container .content-box#edu .content-inner-box #user-edu .edu-container h1.school {
+.content-container
+  .content-box#edu
+  .content-inner-box
+  #user-edu
+  .edu-container
+  h1.school {
   flex-grow: 1;
   text-decoration: none;
   font-size: 22px;
