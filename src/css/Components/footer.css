@@ -4,12 +4,14 @@
 
   text-align: center;
 
-  background: rgba(245, 245, 245, 0.6);
-  color: #2e2f2f;
+  background: linear-gradient(0deg, rgba(245, 245, 245, 0.2), transparent);
+  background-size: 300% 300%;
+  background-position: 250%;
+  color: whitesmoke;
 }
 
 .footer a {
-  color: #2e2f2f;
+  color: whitesmoke;
 }
 
 .footer a:hover {
