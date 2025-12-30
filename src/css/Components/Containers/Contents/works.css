@@ -1,53 +1,101 @@
 .content-container .content-box#works .content-inner-box #user-works {
   width: 100%;
   margin-top: 2rem;
-  
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  gap: 1rem;
+
+  display: grid;
+  grid-template-columns: repeat(3, 18rem);
+  grid-template-rows: repeat(3, auto);
+  grid-auto-flow: dense;
+
+  justify-content: center;
+  justify-items: stretch;
+  align-items: stretch;
+
+  grid-gap: 1rem;
 }
 
-.content-container .content-box#works .content-inner-box #user-works .work-container {
-  width: 22rem;
+.content-container
+  .content-box#works
+  .content-inner-box
+  #user-works
+  .work-container {
+  width: 100%;
 
-  background: #2e2f2f;
+  background: linear-gradient(45deg, transparent, rgba(0, 0, 0, 0.4));
+  border: 2px solid rgba(0, 0, 0, 0.8);
+  border-left: 0 !important;
+  border-bottom: 0 !important;
+
   color: whitesmoke;
-  border-radius: 1rem;
+  border-radius: 8px;
   text-align: left !important;
-  padding: 1rem;
   text-decoration: none;
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
-.content-container .content-box#works .content-inner-box #user-works .work-container:hover {
-  opacity: .4;
+.content-container
+  .content-box#works
+  .content-inner-box
+  #user-works
+  .work-container:hover {
+  opacity: 0.4;
 }
 
-.content-container .content-box#works .content-inner-box #user-works .work-container * {
+.content-container
+  .content-box#works
+  .content-inner-box
+  #user-works
+  .work-container
+  .text-container {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+.content-container
+  .content-box#works
+  .content-inner-box
+  #user-works
+  .work-container
+  .text-container
+  * {
   width: 100%;
   text-align: left !important;
 }
 
-.content-container .content-box#works .content-inner-box #user-works .work-container .work-desp {
-  opacity: .6;
-  margin: .5rem 0;
+.content-container
+  .content-box#works
+  .content-inner-box
+  #user-works
+  .work-container
+  .work-desp {
+  opacity: 0.6;
+  margin: 0.5rem 0;
   flex-grow: 1;
 }
 
-.content-container .content-box#works .content-inner-box #user-works .work-container .work-lang-container {
+.content-container
+  .content-box#works
+  .content-inner-box
+  #user-works
+  .work-container
+  .work-lang-container {
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: start !important;
   gap: 10px;
-  margin-top: .5rem;
+  margin-top: 0.5rem;
 }
 
-.content-container .content-box#works .content-inner-box #user-works .work-container .work-lang-container span.works-lang-badge {
+.content-container
+  .content-box#works
+  .content-inner-box
+  #user-works
+  .work-container
+  .work-lang-container
+  span.works-lang-badge {
   width: fit-content !important;
   background: rgb(66, 66, 241);
   color: whitesmoke;

@@ -19,12 +19,14 @@ for (let i = 0; i < contacts.length; i++) {
   const template = `<a class="contacts-container" href="${
     contacts[i].value.split("|")[0]
   }" target="_blank">
-  <p class="contact-link">
-    ${contacts[i].value.split("|")[1]}
-  </p>
-  <p class="contact-floor">
-    ${contacts[i].floor}
-  </p>
+  <div class="text-container">
+    <p class="contact-link">
+      ${contacts[i].value.split("|")[1]}
+    </p>
+    <p class="contact-floor">
+      ${contacts[i].floor}
+    </p>
+  </div>
 </a>`;
 
   contactElement.innerHTML += template;

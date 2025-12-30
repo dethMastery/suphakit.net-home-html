@@ -3,13 +3,12 @@
   margin-top: 2rem;
 
   display: grid;
-
-  justify-content: center;
-
   grid-template-columns: repeat(3, 18rem);
   grid-template-rows: repeat(3, auto);
   grid-auto-flow: dense;
 
+  
+  justify-content: center;
   justify-items: stretch;
   align-items: stretch;
 

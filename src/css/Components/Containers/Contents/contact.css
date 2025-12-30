@@ -1,28 +1,44 @@
 .content-container .content-box#contacts .content-inner-box #user-contacts {
   width: 100%;
+  margin-top: 2rem;
 
-  display: flex;
+  /* display: flex;
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
-  gap: 1rem;
-  margin-top: 2rem;
+  gap: 1rem; */
+
+  display: grid;
+  grid-template-columns: repeat(2, 18rem);
+  grid-template-rows: repeat(3, auto);
+  grid-auto-flow: dense;
+
+  justify-content: center;
+  justify-items: stretch;
+  align-items: stretch;
+
+  grid-gap: 1rem;
 }
 
 .content-container .content-box#contacts .content-inner-box #user-contacts .contacts-container {
-  width: 22rem;
-  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3);
   color: whitesmoke;
   text-decoration: none;
 
-  padding: 1rem;
-  border: 2px solid #2e2f2f;
-  border-radius: 1rem;
+  border: 2px solid rgba(0, 0, 0, 0.7);
+  border-left: 0 !important;
+  border-bottom: 0 !important;
+  border-radius: 8px;
 }
 
 .content-container .content-box#contacts .content-inner-box #user-contacts .contacts-container:hover {
   opacity: .4;
   /* transform: scale(.9); */
+}
+
+.content-container .content-box#contacts .content-inner-box #user-contacts .contacts-container .text-container {
+  padding: 1rem;
 }
 
 .content-container .content-box#contacts .content-inner-box #user-contacts .contacts-container .contact-link {

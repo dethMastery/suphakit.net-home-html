@@ -53,17 +53,24 @@ for (let i = 0; i < works.length; i++) {
     }
   }
 
-  const Template = `<a target="_blank" class="work-container" href="${
-    works[i].link
-  }">
-  <h2 class="work-name">
-    ${works[i].name}
-  </h2>
-  <p class="work-desp">
-    ${works[i].desp}
-  </p>
-  ${lang != "" ? `<div class="work-lang-container">${lang}</div>` : ""}
-</a>`;
+  const Template = `<a
+  target="_blank"
+  class="work-container"
+  href="${works[i].link}"
+>
+  <div class="text-container">
+    <h2 class="work-name">${works[i].name}</h2>
+    <p class="work-desp">${works[i].desp}</p>
+    ${
+      lang != ""
+        ? `
+    <div class="work-lang-container">${lang}</div>
+    `
+        : ""
+    }
+  </div>
+</a>
+`;
 
   workElement.innerHTML += Template;
 }
