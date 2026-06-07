@@ -10,6 +10,15 @@
   background-repeat: no-repeat !important;
   background-size: cover !important;
   background-attachment: fixed !important;
+
+  #scrollDown {
+    opacity: 0;
+    text-decoration: underline;
+    font-weight: bold;
+    
+    /* animation-name: blinking; */
+    animation: .6s linear infinite alternate;
+  }
 }
 
 .heading-container .overlay {
