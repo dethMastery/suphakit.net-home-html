@@ -34,6 +34,13 @@ const works = [
     lang: "Vue.js, Vite.js, Typescript",
     desp: "CardFight Vanguard Tool that help you calculate Power",
   },
+  {
+    id: 5,
+    name: "ezServe",
+    link: "https://github.com/katzEco/ez-serve",
+    lang: "Typescript, express.js",
+    desp: "npm package to wrapping over express.js serve",
+  },
 ];
 
 const workElement = document.querySelector("#user-works");
