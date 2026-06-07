@@ -9,7 +9,8 @@
   gap: 1rem; */
 
   display: grid;
-  grid-template-columns: repeat(2, 18rem);
+  /* grid-template-columns: repeat(2, 18rem); */
+  grid-template-columns: repeat(auto-fill, minmax(calc(1rem + 18rem), 45%));
   grid-template-rows: repeat(3, auto);
   grid-auto-flow: dense;
 

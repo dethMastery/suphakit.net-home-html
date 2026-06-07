@@ -95,7 +95,7 @@
   font-weight: bold;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 950px) {
   .content-container .content-box#about .content-inner-box #user-data {
     flex-direction: column !important;
 
